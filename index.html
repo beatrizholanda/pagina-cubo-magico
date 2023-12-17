@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+   <style>
+        #cubo {
+            width: 100px;
+            height: 100px;
+            background-color: #00ff00;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotateCube 5s infinite linear;
+        }
+
+        @keyframes rotateCube {
+            from {
+                transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotateX(360deg) rotateY(360deg);
+            }
+        }
+    </style>
+    <title>Cubo Mágico - Curiosidades</title>
+</head>
+<body>
+
+    <header>
+        <h1>Cubo Mágico - Curiosidades</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que é o Cubo Mágico?</h2>
+            <p>O cubo mágico, também conhecido como cubo de Rubik, é um quebra-cabeça tridimensional inventado pelo arquiteto húngaro Ernő Rubik em 1974. Ele se tornou um dos quebra-cabeças mais populares e vendidos do mundo.</p>
+        </section>
+
+        <section>
+            <h2>Curiosidades</h2>
+            <ul>
+                <li>O cubo mágico tem seis faces, cada uma de uma cor sólida.</li>
+                <li>Existem mais de 43 quintilhões de combinações possíveis, mas apenas uma solução correta.</li>
+                <li>O recorde mundial para resolver o cubo mágico é de poucos segundos!</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Técnicas de Montagem</h2>
+            <p>Montar o cubo mágico pode parecer desafiador, mas com as técnicas certas, é possível simplificar o processo. Aqui estão algumas dicas:</p>
+            <ol>
+                <li><strong>Camadas Iniciais:</strong> Resolva camada por camada, começando pela cruz e depois preenchendo cada face.</li>
+                <li><strong>Cross de Coração:</strong> Forme um "X" no meio e complete as outras peças ao redor.</li>
+                <li><strong>F2L (First Two Layers):</strong> Resolva simultaneamente a primeira e a segunda camadas para acelerar o processo.</li>
+            </ol>
+        </section>
+    </main>
+    <div id="cubo"></div>
+
+    <footer>
+        <p>&copy; 2023 Cubo Mágico - Curiosidades</p>
+    </footer>
+
+</body>
+</html>
